@@ -1,0 +1,11 @@
+log4j:
+  appender:
+    FILE:
+      nodeValue: org.apache.log4j.DailyRollingFileAppender
+      File: '/apps/logs/excelr.log  '
+      layout:
+        nodeValue: org.apache.log4j.PatternLayout
+        ConversionPattern: '[%d] %t %c %L %-5p  - %m%n'
+      Append: 'true'
+      DatePattern: '''.''yyy-MM-dd  '
+  rootLogger: DEBUG,FILE

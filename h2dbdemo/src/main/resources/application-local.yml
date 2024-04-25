@@ -1,0 +1,13 @@
+spring:
+  h2:
+    console:
+      enabled: 'true'
+  datasource:
+    username: admin
+    url: jdbc:h2:mem:studentTestDB
+    driverClassName: org.h2.Driver
+    password: admin
+  application:
+    name: h2dbdemo
+server:
+  port: '8087'
